@@ -46,21 +46,19 @@ h1 {
     flex-direction: column;
     flex-wrap: wrap;
     margin: 0 auto;
+    padding: 2rem;
     align-items: center;
-    width: 25%;
+    width: 30%;
     font-weight: bold;
-    min-height: 150px;
     border-radius: 15px;
     background-color: #000;
-    
 }
 
 .container p {
     color: white;
     margin: 0 auto;
-    padding: 1rem 0;
-    margin: 0.5rem 0;
     font-size: 1.5em;
+    padding-bottom: 1rem;
 }
 
 .container span {
@@ -78,13 +76,34 @@ h1 {
 }
 
 .container h3 {
-    padding: 10px 0;
-    margin: 5px 0;
     color: #fff;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-top: 10px;
+    margin-top: 5px;
 }
 
 .container .btn:hover {
     background-color: white;
     color: skyblue;
     transition: 0.3s ease-in-out;
+}
+
+
+@media screen and (max-width: 900px) {
+    .container {
+        min-width: 400px;
+        padding: 1.5rem;
+        font-size: 1.1rem;
+    }
+
+    #nav-bar ul {
+        justify-content: space-evenly;
+    }
+
+    .container h3 {
+        margin: 0.25rem;
+        padding-top: 0.75rem;
+        padding-bottom: 0;
+    }
 }

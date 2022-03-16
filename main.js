@@ -20,3 +20,7 @@ function getRandomNumber() {
 }
 
 
+var copyTextarea = document.getElementById("text");
+copyTextarea.select(); //select the text area
+document.execCommand("copy");
+
