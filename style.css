@@ -90,7 +90,7 @@ h1 {
 }
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
     .container {
         min-width: 400px;
         padding: 1.5rem;
@@ -105,5 +105,18 @@ h1 {
         margin: 0.25rem;
         padding-top: 0.75rem;
         padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        font-size: 0.5rem;
+    }
+    .container {
+        min-width: 220px;
+    }
+
+    #navbar {
+        width: 100%;
     }
 }

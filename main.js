@@ -5,7 +5,6 @@ const btn = document.querySelector(".btn");
 const colorValue = document.getElementById("color-value");
 const text = document.getElementById('text');
 
-
 btn.addEventListener('click', function () {
     const randomNumber = getRandomNumber();
     colorValue.textContent = colorNames[randomNumber];
@@ -18,9 +17,3 @@ btn.addEventListener('click', function () {
 function getRandomNumber() {
     return Math.floor(Math.random() * colorNames.length);
 }
-
-
-var copyTextarea = document.getElementById("text");
-copyTextarea.select(); //select the text area
-document.execCommand("copy");
-
